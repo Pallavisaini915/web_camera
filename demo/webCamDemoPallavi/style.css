@@ -1,0 +1,498 @@
+body {
+    background-color: #964dca;
+}
+
+#tx1,
+#tx2 {
+    padding-top: 7px;
+}
+
+.modal {
+    display: none;
+    /*show modal*/
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full  width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /*Enable scroll if needed*/
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    /* border-radius: 20px; */
+}
+
+#previewRecord {
+    display: none;
+    margin-top: 25px;
+}
+
+#canvas {
+    border-radius: 20px;
+}
+
+#vid {
+    border-radius: 20px;
+}
+
+.modal_contanier {
+    background-color: #d7d7d7;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(70, 70, 70);
+    width: 80%;
+    height: 75%;
+    border-radius: 30px;
+    transition: 1s;
+    /* overflow: auto;  */
+    /*Enable scroll if needed */
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* .place_holder{
+    display: flex;
+    justify-content: space-evenly;
+
+} */
+
+.vid01 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/* canvas{
+    display: flex;
+    justify-content: center;
+} */
+
+/* .centre_canvas{
+    justify-content: center;
+} */
+
+.vid02 {
+    display: flex;
+    justify-content: center;
+}
+
+/* .centre_video{
+    margin-top: 20px;
+    padding-left: 10px;
+    margin-left: 20px;
+} */
+
+
+.place_holder {
+    display: flex;
+
+    justify-content: center;
+    margin: 26px;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#previewRecord {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#dnlPic,
+#photo,
+#toggleBtn {
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    color: aliceblue;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 13px;
+    text-size-adjust: 10px;
+    box-shadow: 2px 2px #fbfbfb;
+    size: 10px;
+    min-width: 120px;
+    min-height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.recording {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 20px;
+    font-size: 13px;
+}
+
+#stop-btn,
+#download-btn,
+#dnlPic,
+#pauseReco-btn,
+#resumeReco-btn {
+    display: none;
+}
+
+#start-btn,
+#stop-btn,
+#download-btn,
+#pauseReco-btn,
+#resumeReco-btn {
+    font-size: 13px;
+    background-color: #9458c0;
+    size: 10px;
+    min-width: 120px;
+    min-height: 30px;
+    font-size: 15px;
+    padding: 13px;
+    margin: 10px;
+    border-radius: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    transition: 3ms;
+}
+
+#start-btn:active,
+#start-btn:hover {
+    outline: 0;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+#stop-btn:active,
+#stop-btn:hover {
+    outline: 0;
+}
+
+#download-btn:active,
+#download-btn:hover {
+    outline: 0;
+}
+
+#pauseReco:active,
+#pauseReco:hover {
+    outline: 0;
+    cursor: pointer;
+}
+
+#resumeReco-btn:active,
+#resumeReco-btn:hover {
+    outline: 0;
+    cursor: pointer;
+}
+
+#toggleBtn :active,
+#toggleBtn:hover {
+    outline: 0;
+    cursor: pointer;
+}
+
+#tx1,
+#tx2 {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.vidHeading {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    box-shadow: #aaaaaa;
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+}
+
+#btn23 {
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+    background-color: antiquewhite;
+    box-shadow: #aaaaaa 0 15px 30px -5px;
+}
+
+#btn23:hover {
+    font-weight: bold;
+}
+
+/* #stop-btn, #download-btn{
+    display: none;
+}
+
+#dnlPic{
+    display: none;
+} */
+
+#DownloadVideo {
+    text-decoration: none;
+    /* color: black; */
+    cursor: pointer;
+    color: white;
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+
+    #dnlPic,
+    #photo,
+    #start-btn,
+    #stop-btn,
+    #download-btn,
+    #toggleBtn {
+        font-size: 13px;
+        min-width: 196px;
+    }
+
+    .place_holder {
+        flex-direction: row;
+        margin: 23px;
+    }
+
+    .close {
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 30px;
+        padding-top: 30px;
+        cursor: pointer;
+    }
+
+    .centre_video {
+        margin-top: 20px;
+        padding-left: 10px;
+        margin-left: 20px;
+    }
+
+    .centre_canvas {
+        /* display: flex;
+        flex-direction: column; */
+        margin-top: 20px;
+        padding-left: 10px;
+        margin-left: 20px;
+    }
+
+    .recording {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .vid01 {
+
+        flex-direction: column;
+    }
+
+    .vidHeading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .vid02 {
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .vid01 {
+        margin-top: 10px;
+    }
+
+    .vid02 {
+        margin-top: 44px;
+    }
+
+    #dnlPic,
+    #photo,
+    #start-btn,
+    #stop-btn,
+    #download-btn,
+    #toggleBtn {
+        font-size: 12px;
+        min-width: 156px;
+    }
+
+    .close {
+        float: right;
+        padding-bottom: 10px;
+        padding: 0px;
+        margin-bottom: 10px;
+
+        cursor: pointer;
+    }
+
+    .place_holder {
+        flex-direction: column;
+        margin: 23px;
+    }
+
+    #tx1,
+    #tx2 {
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .canvas {
+        margin-top: 23px;
+        margin-left: 6px;
+    }
+
+    .centre_video {
+        margin-top: 20px;
+        padding-left: 0px;
+        padding-right: 10px;
+
+        margin-left: -6px;
+    }
+
+    #dnlPic,
+    #photo,
+    #toggleBtn {
+        font-size: 10px;
+        background-color: antiquewhite;
+        size: 10px;
+        min-width: 120px;
+        min-height: 30px;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin: 5px;
+        border-radius: 15px;
+        color: rgb(21, 21, 21);
+        cursor: pointer;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        transition: 3ms;
+    }
+}
+
+@media ((min-width: 410px) and (max-width: 449px)) {
+    .vid01 {
+        margin-top: 18px;
+    }
+
+    .vid02 {
+        margin-top: 20px;
+    }
+
+    #vid {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    #canvas {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    #previewRecord {
+
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media ((min-width: 375px) and (max-width: 399px)) {
+    #vid {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    #canvas {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    #previewRecord {
+
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media ((min-width: 360px) and (max-width: 390px)) {
+    #vid {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    #canvas {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    #previewRecord {
+
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media ((min-width: 800px) and (max-width: 850px)) {
+    #vid {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .vid01 {
+        margin-top: 70px;
+    }
+
+    #canvas {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    #previewRecord {
+
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    #photo,
+    #dnlPic,
+    #toggleBtn {
+        margin-top: 70px;
+    }
+
+    .header {
+        margin-top: 400px;
+    }
+
+}

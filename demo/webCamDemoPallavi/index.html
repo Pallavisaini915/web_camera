@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VideoPlay</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="vidHeading">
+            <h1>Video Player</h1>
+        </div>
+
+        <div class="buttonDiv">
+            <button id="btn23"">Start Preview</button>
+      </div>
+
+      <div class=" modal">
+                <div class="modal_contanier">
+                    <span class="close">&times;</span>
+
+                    <div class="vid01">
+                        <video id="vid" class="centre_video" autoplay muted></video>
+                        <!-- <canvas id="mycanvas" class="centre_canvas">else</canvas> -->
+                        <canvas id="canvas"></canvas>
+                        <iframe id="previewRecord"></iframe>
+                    </div>
+
+                    <div class="vid02">
+                        <!-- <button id="btn">Open Camera</button> -->
+                        <button id="photo">Take Photo</button>
+                        <button id="dnlPic">Download</button>
+                        <button id='toggleBtn'>Toggle</button>
+                    </div>
+
+                    <div class="recording">
+                        <button id="start-btn">Start Recording</button>
+                        <button id="stop-btn">Stop Recording</button>
+                        <button id="download-btn">
+                            <a id="DownloadVideo" download="test.webm">Download video</a>
+                        </button>
+
+                        <button id="pauseReco-btn"> Pause </button>
+                        <button id="resumeReco-btn"> Resume </button>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+<script src="../../lib/cam.js"></script>
+
+</html>
